@@ -1,0 +1,101 @@
+.container {
+    background: #ffbbcf;
+    margin: 0 auto;
+    width: 650px;
+    border-radius: 20px;
+}
+h1{
+    color: #ffffff;
+}
+input[type = text]{
+    margin-left: 190px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    border-color: #ff7ab1;
+    outline: none;
+}
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 50px rgb(255, 231, 235) inset;
+    -webkit-text-fill-color: black;
+}
+#todo-list{
+    background: #ffbbcf;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    background: #f780a4;
+    margin-bottom: -10px;
+    border-radius: 20px;
+    padding: 0 20px;
+    margin-right: 40px;
+    height: 40px;
+    padding-top: 7px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#btndel, #btndone{
+    font-weight: 600;
+    outline: none;
+    background: #f780a4;
+    float: right;
+    border: none;
+    color: #c0305b;
+
+}
+#btndel:hover, #btndone:hover{
+    
+    color: white;
+    transition: color 0.5s ease;
+    
+}
+#btndelX:hover, #btndoneV:hover{
+    
+    color: white;
+    transition: color 0.5s ease;
+    
+}
+#btndelX, #btndoneV{
+    outline: none;
+    background: #bb617c;
+    float: right;
+    border: none;
+    font-weight: 600;
+}
+
+#btnsubmit{
+    color: #ffffff;
+    border-color: #fa457b;
+    outline: none;
+    border-radius: 10px;
+    background: #f780a4;
+    transition: background 0.5s ease;  
+}
+
+#btnsubmit:hover{
+    background: #c0305b;
+    transition: background 0.5s ease;  
+    
+}
+
+@Keyframes fade {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+ 
+.done{
+    text-decoration: line-through;
+    background: #bb617c;
+    opacity: 50%;
+
+    /* animation-name: fade;
+    animation-duration: 3s; 
+    animation-fill-mode: forwards;  */
+}
+.done:active,.done:visited{
+    
+    transition: background 0.5s ease;
+}
